@@ -65,4 +65,8 @@ setup(
     ext_modules=[CMakeExtension('normalSpeed')],
     cmdclass=dict(build_ext=CMakeBuild),
     zip_safe=False,
+    install_requires=[
+        'numpy',
+        'pybind11[global]',
+    ],
 )
